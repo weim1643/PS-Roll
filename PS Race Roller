@@ -1,0 +1,108 @@
+import random
+
+attempts = input("How many spins will you use?: ")
+print(attempts.isdigit())
+
+while True:
+    if attempts.isdigit() == True:
+        break
+    print("Input may only be an integer, please try again.")
+    attempts = input("How many spins will you use?: ")
+
+clanlist = []
+print(attempts)
+
+for i in range(int(attempts)):
+    n = random.randint(1, 1000)
+    if n >= 1 and n <= 600:
+        m = random.randint(1, 17)
+        if m == 1:
+            clanlist.append("Common: Sakurai")
+        elif m == 2:
+            clanlist.append("Common: Fujiwara")
+        elif m == 3:
+            clanlist.append("Common: Mori")
+        elif m == 4:
+            clanlist.append("Common: Hashimoto")
+        elif m == 5:
+            clanlist.append("Common: Saito")
+        elif m == 6:
+            clanlist.append("Common: Ishida")
+        elif m == 7:
+            clanlist.append("Common: Nishimura")
+        elif m == 8:
+            clanlist.append("Common: Ando")
+        elif m == 9:
+            clanlist.append("Common: Onishi")
+        elif m == 10:
+            clanlist.append("Common: Fukuda")
+        elif m == 11:
+            clanlist.append("Common: Kurosaki")
+        elif m == 12:
+            clanlist.append("Common: Haruno")
+        elif m == 13:
+            clanlist.append("Common: Bakugo")
+        elif m == 14:
+            clanlist.append("Common: Toka")
+        elif m == 15:
+            clanlist.append("Common: Izuku")
+        elif m == 16:
+            clanlist.append("Common: Suzuki")
+        elif m == 17:
+            clanlist.append("Common: Todoroki")
+    elif n > 600 and n <= 830:
+        m = random.randint(1, 4)
+        if m == 1:
+            clanlist.append("Uncommon: Kaneki")
+        elif m == 2:
+            clanlist.append("Uncommon: Nakahara")
+        elif m == 3:
+            clanlist.append("Uncommon: Takada")
+        elif m == 4:
+            clanlist.append("Uncommon: Terauchi")
+    elif n > 830 and n <= 950:
+        m = random.randint(1, 5)
+        if m == 1:
+            clanlist.append("Rare: Haganezuka")
+        elif m == 2:
+            clanlist.append("Rare: Kanzaki")
+        elif m == 3:
+            clanlist.append("Rare: Kanamori")
+        elif m == 4:
+            clanlist.append("Rare: Ubuyashiki")
+        elif m == 5:
+            clanlist.append("Rare: Urokodaki")
+    elif n > 950 and n <= 990:
+        m = random.randint(1, 6)
+        if m == 1:
+            clanlist.append("Legendary: Kocho")
+        elif m == 2:
+            clanlist.append("Legendary: Shinazugawa")
+        elif m == 3:
+            clanlist.append("Legendary: Sabito")
+        elif m == 4:
+            clanlist.append("Legendary: Tamayo")
+        elif m == 5:
+            clanlist.append("Legendary: Kuwajima")
+        elif m == 6:
+            clanlist.append("Legendary: Makamo")
+    elif n > 990 and n <= 999:
+        m = random.randint(1, 4)
+        if m == 1:
+            clanlist.append("Mythic: Tomioka")
+        elif m == 2:
+            clanlist.append("Mythic: Tokito")
+        elif m == 3:
+            clanlist.append("Mythic: Hashibira")
+        elif m == 4:
+            clanlist.append("Mythic: Soyama")
+    elif n == 1000:
+        m = random.randint(1, 3)
+        if m == 1:
+            clanlist.append("Supreme: Agatsuma")
+        elif m == 2:
+            clanlist.append("Supreme: Kamado")
+        elif m == 3:
+            clanlist.append("Supreme: Rengoku")
+
+print(clanlist)
